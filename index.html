@@ -23,15 +23,55 @@
 
       body {
         min-height: 100vh;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+      }
+      .header-section{
+        height: 20vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
       }
       .feature-section{
-        height: 100vh;
+        height: 80vh;
+        width: 90vw;
         display: grid;
         place-items: center;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(3,1fr);
+        gap: 1em;
       }
-      
+      .items_a{
+        grid-column: span 2;
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .items_b{
+        grid-column: span 3;
+        grid-row: span 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .img-side img{
+        width: 70%;
+        height: auto;
+      }
+      .items_b .img-side img{
+        width: 100%;
+        height: auto;
+      }
     </style>
   </head>
   <body>
@@ -70,14 +110,50 @@
     </div>
     <div class="feature-section">
       <!-- Feature Section Content Here -->
-          <div class="items">
+          <div class="items_a">
                    <div class="text-side">
-                          <h2>Create high-quality, original content at scale</h2>
+                          <p class="feature-titre">Create high-quality, original content at scale</p>
                           <p>Scale original content production efficiently.</p>
                    </div>
                    <div class="img-side">
-                         <img src="resources/icon1.png" alt="icon1" />
+                         <img src="./design/image_1@2x.png" alt="image_1" />
                    </div>
+          </div>
+          <div class="items_a">
+                   <div class="text-side">
+                          <p class="feature-titre">Create high-quality, original content at scale</p>
+                          <p>Scale original content production efficiently.</p>
+                   </div>
+                   <div class="img-side">
+                         <img src="./design/image_2@2x.png" alt="image_2" />
+                   </div>
+          </div>
+          <div class="items_a">
+                   <div class="text-side">
+                          <p class="feature-titre">Create high-quality, original content at scale</p>
+                          <p>Scale original content production efficiently.</p>
+                   </div>
+                   <div class="img-side">
+                         <img src="./design/image_3@2x.png" alt="image_3" />
+                   </div>
+          </div>
+          <div class="items_b">
+                    <div class="img-side">
+                          <img src="./design/image_4@2x.png" alt="image_4" />
+                   </div>
+                    <div class="text-side">
+                            <p class="feature-titre">Repurpose existing content across multiple channels and formats (audio, video)</p>
+                            <p>Recycle content for divers platforms and create new content.</p>
+                    </div>
+          </div>
+          <div class="items_b">
+                    <div class="img-side">
+                          <img src="./design/image_5@2x.png" alt="image_5" />
+                   </div>
+                    <div class="text-side">
+                            <p class="feature-titre">Repurpose existing content across multiple channels and formats (audio, video)</p>
+                            <p>Recycle content for divers platforms and create new content.</p>
+                    </div>
           </div>
     </div>
   </body>
