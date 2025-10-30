@@ -22,19 +22,16 @@
       }
 
       body {
+        min-height: 100vh;
+      }
+      .feature-section{
         height: 100vh;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
       }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
+      
     </style>
   </head>
   <body>
@@ -66,11 +63,22 @@
 
     -->
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
+    <div class="header-section">
+      <!-- Header Section Content Here -->
+      <h1>Explore Our Essential Features for Effective Data Management</h1>
+      <p>Explore how our platform empowers organizations to elevate their data strategy, driving innovation and informed decision-making.</p>
+    </div>
+    <div class="feature-section">
+      <!-- Feature Section Content Here -->
+          <div class="items">
+                   <div class="text-side">
+                          <h2>Create high-quality, original content at scale</h2>
+                          <p>Scale original content production efficiently.</p>
+                   </div>
+                   <div class="img-side">
+                         <img src="resources/icon1.png" alt="icon1" />
+                   </div>
+          </div>
     </div>
   </body>
 </html>
